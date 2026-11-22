@@ -254,3 +254,126 @@ footer .contenedor-footer {
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* ---------- Cabecera: nombre del sitio y lema ---------- */
+.titulo-sitio {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1;
+  color: var(--rojo);
+  margin: 0;
+}
+.lema {
+  font-family: var(--fuente-titulo);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--humo);
+  margin: 0.25rem 0 1rem;
+}
+
+/* =========================================================
+   PÁGINA DE INICIO: video de fondo + logo central
+   ========================================================= */
+.pagina-inicio { background-color: #000; }
+
+.hero-inicio {
+  position: relative;
+  isolation: isolate;          /* mantiene el video y la capa dentro del bloque */
+  min-height: 100vh;
+  min-height: 100svh;          /* en celular, descuenta la barra del navegador */
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* llena la pantalla sin deformar */
+  z-index: -2;
+}
+
+/* Capa oscura: asegura que el menú y los textos se lean */
+.hero-capa {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.65), rgba(0,0,0,.25) 40%, rgba(0,0,0,.65));
+  z-index: -1;
+}
+
+/* Menú en blanco sobre el video */
+.pagina-inicio .navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.pagina-inicio .navbar-brand,
+.pagina-inicio .navbar .nav-link { color: #fff; }
+.pagina-inicio .navbar .nav-link:hover,
+.pagina-inicio .navbar .nav-link.active,
+.pagina-inicio .navbar .nav-link.show { color: #fff; }
+
+.pagina-inicio .navbar-toggler { border-color: #fff; }
+.pagina-inicio .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.pagina-inicio .dropdown-menu {
+  background-color: rgba(20, 0, 0, 0.92);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.pagina-inicio .dropdown-item { color: #fff; }
+.pagina-inicio .dropdown-item:hover,
+.pagina-inicio .dropdown-item:focus { background-color: var(--rojo); color: #fff; }
+
+.pagina-inicio a:focus-visible,
+.pagina-inicio button:focus-visible { outline-color: #fff; }
+
+/* Logo centrado */
+.hero-centro {
+  flex: 1;                     /* ocupa el espacio entre el menú y el pie */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.logo-central { margin: 0; }
+.logo-central img {
+  width: clamp(240px, 45vw, 520px);
+  height: auto;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.6));
+}
+
+.pagina-inicio .lema { color: #fff; font-size: 1.5rem; margin-top: 1rem; }
+
+/* Pie dentro del video: mail a la izquierda, ciudad a la derecha */
+.hero-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 1.25rem;
+  font-size: 0.95rem;
+  color: #fff;
+  border-top: 0;
+}
+
+.btn-video {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-radius: var(--radio);
+  padding: 0.25rem 0.9rem;
+  font-family: var(--fuente-titulo);
+  font-weight: 600;
+}
+.btn-video:hover { background-color: var(--rojo); border-color: var(--rojo); }
+

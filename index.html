@@ -15,77 +15,82 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="pagina-inicio">
 
-  <header class="container">
-    <p class="titulo-sitio">KatDog</p>
-    <p class="lema">Alguna cita o slogan</p>
+  <div class="hero-inicio">
 
-    <nav class="navbar navbar-expand-lg" aria-label="Principal">
-      <div class="container-fluid">
+    <!-- Video decorativo: sin sonido, en bucle -->
+    <video class="hero-video" autoplay muted loop playsinline
+           poster="img/hero/poster.jpg" aria-hidden="true">
+      <source src="video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-capa"></div>
 
-        <a class="navbar-brand d-lg-none" href="index.html">KatDog</a>
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg" aria-label="Principal">
+        <div class="container-fluid">
 
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
+          <a class="navbar-brand d-lg-none" href="index.html">KatDog</a>
+          <button class="navbar-toggler" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#menu"
+                  aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
 
-            <!-- Menú KatDog -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="menuKatdog" role="button"
-                 data-bs-toggle="dropdown" aria-expanded="false">KatDog</a>
-              <ul class="dropdown-menu" aria-labelledby="menuKatdog">
-                <li><a class="dropdown-item" href="katdog.html">Quién es KatDog</a></li>
-                <li><a class="dropdown-item" href="trayectoria.html">Trayectoria</a></li>
-                <li><a class="dropdown-item" href="albumes.html">Álbumes</a></li>
-                <li><a class="dropdown-item" href="en-vivo.html">En vivo</a></li>
-                <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
-                <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
-              </ul>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
 
-            <!-- Menú Informática -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="menuInformatica" role="button"
-                 data-bs-toggle="dropdown" aria-expanded="false">Informática</a>
-              <ul class="dropdown-menu" aria-labelledby="menuInformatica">
-                <li><a class="dropdown-item" href="creditos.html#equipo">Nuestro equipo</a></li>
-                <li><a class="dropdown-item" href="creditos.html#materia">La materia</a></li>
-              </ul>
-            </li>
+              <!-- Menú KatDog -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menuKatdog" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">KatDog</a>
+                <ul class="dropdown-menu" aria-labelledby="menuKatdog">
+                  <li><a class="dropdown-item" href="katdog.html">Quién es KatDog</a></li>
+                  <li><a class="dropdown-item" href="trayectoria.html">Trayectoria</a></li>
+                  <li><a class="dropdown-item" href="albumes.html">Álbumes</a></li>
+                  <li><a class="dropdown-item" href="en-vivo.html">En vivo</a></li>
+                  <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
+                  <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                </ul>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
+              <!-- Menú Informática -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menuInformatica" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">Informática</a>
+                <ul class="dropdown-menu" aria-labelledby="menuInformatica">
+                  <li><a class="dropdown-item" href="creditos.html#equipo">Nuestro equipo</a></li>
+                  <li><a class="dropdown-item" href="creditos.html#materia">La materia</a></li>
+                </ul>
+              </li>
 
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main class="container">
-    <h1>Inicio</h1>
-    <section>
-      <h2>Comienzos</h2>
-      <p>Trabajar en la investigación para saber cómo organizar las secciones y las páginas.</p>
-    </section>
-  </main>
+    <main class="hero-centro">
+      <h1 class="logo-central">
+        <img src="img/logo-katdog.png" alt="KatDog">
+      </h1>
+    </main>
 
-  <footer>
+    <footer>
     <div class="container contenedor-footer">
       <span>Universidad Nacional de las Artes · Informática General 2026 · Trabajo Práctico 2</span>
       <a href="creditos.html">Créditos</a>
     </div>
   </footer>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
