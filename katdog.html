@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KatDog</title>
+  <title>KatDog - Quiénes somos</title>
 
-  <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- Framework y CSS propio (siempre en este orden) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,12 +17,13 @@
 
   <header class="container">
     <p class="titulo-sitio">KatDog</p>
-    <p class="lema">Desde Salta pal Mundo</p>
+    <p class="lema"></p>
 
     <nav class="navbar navbar-expand-lg" aria-label="Principal">
       <div class="container-fluid">
 
         <a class="navbar-brand d-lg-none" href="index.html">KatDog</a>
+
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#menu"
                 aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
@@ -38,12 +37,12 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
 
-            <!-- Menú KatDog -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="menuKatdog" role="button"
                  data-bs-toggle="dropdown" aria-expanded="false">KatDog</a>
+
               <ul class="dropdown-menu" aria-labelledby="menuKatdog">
-                <li><a class="dropdown-item" href="katdog.html">¿Qué es KatDog</a></li>
+                <li><a class="dropdown-item" href="katdog.html">¿Qué es KatDog?</a></li>
                 <li><a class="dropdown-item" href="trayectoria.html">Trayectoria</a></li>
                 <li><a class="dropdown-item" href="albumes.html">Álbumes</a></li>
                 <li><a class="dropdown-item" href="en-vivo.html">En vivo</a></li>
@@ -52,10 +51,10 @@
               </ul>
             </li>
 
-            <!-- Menú Informática -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="menuInformatica" role="button"
                  data-bs-toggle="dropdown" aria-expanded="false">Informática</a>
+
               <ul class="dropdown-menu" aria-labelledby="menuInformatica">
                 <li><a class="dropdown-item" href="creditos.html#equipo">Nuestro equipo</a></li>
                 <li><a class="dropdown-item" href="creditos.html#materia">La materia</a></li>
@@ -73,16 +72,60 @@
   </header>
 
   <main class="container">
-    <h1>¿Qué es KatDog?</h1>
-    <section>
-      <h2>Te contamos</h2>
-      <p>Somos <strong>KatDog</strong> una dupla de DJ provinientes de Salta, construimos nuestro nombre a partir de las caricaturas animadas que veíamos en nuestra infancia. Es a la vez una convinación de personalidades: Arisca como el <strong>gato</strong> y juguetona como el <strong>perro</strong></p>
+
+    <h1>Quiénes somos</h1>
+
+    <section class="box-nosotros">
+
+      <img src="img/lautribi.jpg" alt="Integrantes de KatDog" class="imagen-nosotros">
+
+      <div class="texto-nosotros">
+
+        <h2>Conocé a KatDog</h2>
+
+        
+<div class="texto-nosotros">
+ 
+<p>
+  Somos una dupla de DJs provenientes de Salta. Construimos nuestro nombre
+  a partir de las caricaturas animadas que veíamos durante nuestra infancia.
+  Esta idea representa también una combinación de personalidades: arisca
+  como el <strong>gato</strong> y juguetona como el <strong>perro</strong>.
+</p>
+
+<p>
+  Para nosotros, KatDog es mucho más que un proyecto musical:
+  es una forma de conectar con otras personas a través de la música.
+  Buscamos generar encuentros presenciales y crear un espacio de pertenencia
+  donde las personas puedan conocerse, compartir experiencias, construir vínculos
+  y sentirse parte de una comunidad. Queremos que sea un lugar de encuentro
+  y compañía, donde la música sea el punto que nos une.
+</p>
+
+<h2>¿Cómo comenzó todo?</h2>
+
+<p>
+  Al principio cada uno tocaba por separado, pero coincidíamos seguido
+  y descubrimos que nuestra forma de hacer música era parecida. Así
+  comenzamos a unir nuestras ideas y gustos hasta construir lo que hoy
+  conocemos como KatDog.
+</p>
+
+<h2>De Salta para el mundo</h2>
+
+<p>
+  Una parte importante de nuestra identidad es representar culturalmente
+  a Salta, nuestra provincia. Queremos llevar nuestra música a distintos
+  lugares del mundo, compartir nuestras raíces y demostrar que la música
+  puede conectar personas y culturas sin importar las distancias.
+</p>
+
+
+
+      </div>
+
     </section>
 
-    <section>
-        <h2>¿siempre fuimos una dupla?</h2>
-        <p>No, al inicio cada uno tocaba por separado pero coincidiamos seguido y nuestra forma de hacer música era parecida, por ahi fue que comenzamos a pensar y construimos lo que hoy llamamos <strong>KatDog</strong>.</p>
-    </section>
   </main>
 
   <footer>
@@ -94,5 +137,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
+
