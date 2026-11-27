@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | KatDog</title>
+  <title>En vivo | KatDog</title>
 
   <!-- Tipografía -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
 
-  <!-- Framework y CSS propio (siempre en este orden) -->
+  <!-- Bootstrap y CSS propio -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,15 +20,16 @@
 
   <header class="container">
     <p class="titulo-sitio">KatDog</p>
-    <p class="lema">Alguna cita o slogan</p>
+    <p class="lema">Dos opuestos. Un solo sonido.</p>
 
     <nav class="navbar navbar-expand-lg" aria-label="Principal">
       <div class="container-fluid">
 
         <a class="navbar-brand d-lg-none" href="index.html">KatDog</a>
+
         <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -38,24 +40,28 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
 
-            <!-- Menú KatDog -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="menuKatdog" role="button"
-                 data-bs-toggle="dropdown" aria-expanded="false">KatDog</a>
+              <a class="nav-link dropdown-toggle" href="#" id="menuKatdog"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                KatDog
+              </a>
+
               <ul class="dropdown-menu" aria-labelledby="menuKatdog">
                 <li><a class="dropdown-item" href="katdog.html">Quién es KatDog</a></li>
                 <li><a class="dropdown-item" href="trayectoria.html">Trayectoria</a></li>
-                <li><a class="dropdown-item" href="albumes.html">Álbumes</a></li>
+                <li><a class="dropdown-item" href="musica.html">Música</a></li>
                 <li><a class="dropdown-item" href="en-vivo.html">En vivo</a></li>
                 <li><a class="dropdown-item" href="galeria.html">Galería</a></li>
                 <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
               </ul>
             </li>
 
-            <!-- Menú Informática -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="menuInformatica" role="button"
-                 data-bs-toggle="dropdown" aria-expanded="false">Informática</a>
+              <a class="nav-link dropdown-toggle" href="#" id="menuInformatica"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informática
+              </a>
+
               <ul class="dropdown-menu" aria-labelledby="menuInformatica">
                 <li><a class="dropdown-item" href="creditos.html#equipo">Nuestro equipo</a></li>
                 <li><a class="dropdown-item" href="creditos.html#materia">La materia</a></li>
@@ -72,12 +78,104 @@
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Inicio</h1>
-    <section>
-      <h2>Comienzos</h2>
-      <p>Trabajar en la investigación para saber cómo organizar las secciones y las páginas.</p>
+  <main class="container pagina-en-vivo">
+
+    <!-- Presentación -->
+    <section class="intro-en-vivo">
+      <p class="etiqueta-en-vivo">KATDOG / LIVE EXPERIENCES</p>
+      <h1>En vivo</h1>
     </section>
+
+    <!-- Video principal -->
+    <section class="seccion-video-principal">
+
+      <div class="titulo-video-en-vivo">
+        <span>01</span>
+        <div>
+          <h2>KATDOG EN ACCIÓN</h2>
+          <p>LIVE SESSION</p>
+        </div>
+      </div>
+
+      <div class="video-en-vivo video-principal-en-vivo">
+        <video controls preload="metadata">
+          <source src="video/videoprincipal.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </div>
+
+      <p class="frase-en-vivo">
+        Dos personalidades. Una misma frecuencia.
+      </p>
+
+    </section>
+
+    <!-- Cuatro sets -->
+    <section class="seccion-sets">
+
+      <div class="titulo-sets-en-vivo">
+        <p class="etiqueta-en-vivo">LIVE SETS</p>
+        <h2>Así suena KATDOG en vivo</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+          <article class="tarjeta tarjeta-set">
+            <h3>SET <span>01</span></h3>
+            <div class="video-en-vivo">
+              <video controls preload="metadata">
+                <source src="video/set1.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+              </video>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="tarjeta tarjeta-set">
+            <h3>SET <span>02</span></h3>
+            <div class="video-en-vivo">
+              <video controls preload="metadata">
+                <source src="video/set2.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+              </video>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="tarjeta tarjeta-set">
+            <h3>SET <span>03</span></h3>
+            <div class="video-en-vivo">
+              <video controls preload="metadata">
+                <source src="video/set3.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+              </video>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="tarjeta tarjeta-set">
+            <h3>SET <span>04</span></h3>
+            <div class="video-en-vivo">
+              <video controls preload="metadata">
+                <source src="video/set-4.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+              </video>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="cierre-en-vivo">
+      <p>EL PERRO Y EL GATO NO SE QUEDAN QUIETOS.</p>
+    </section>
+
   </main>
 
   <footer>
@@ -89,5 +187,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
